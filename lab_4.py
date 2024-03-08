@@ -28,6 +28,7 @@ time.sleep(5)
 assert "laptop" in driver.title
 
 # Selecting a laptop from the search results
+# laptop_link = driver.find_element("xpath","/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[1]/span/a/div/img")
 laptop_link = driver.find_element("xpath","/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[1]/span/a/div/img")
 laptop_link.click()
 
@@ -49,7 +50,8 @@ time.sleep(5)
 # no_thanks_button.click()Y
 # time.sleep(2)
 
-proceed_to_checkout= driver.find_element("xpath","/html/body/div[1]/div[1]/div/div[1]/div[2]/div/div[3]/div/div[1]/form/span/span/span/input")
+# proceed_to_checkout = driver.find_element("xpath","/html/body/div[1]/div[1]/div/div[1]/div[2]/div/div[3]/div/div[1]/form/span/span/span/input")
+proceed_to_checkout = driver.find_element("xpath","/html/body/div[1]/div[1]/div/div[1]/div[2]/div/div[3]/div/div[1]/form/span/span/span/input")
 proceed_to_checkout.click()
 time.sleep(2)
 
